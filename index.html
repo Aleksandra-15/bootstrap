@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Playpen+Sans:wght@200;300;600&family=Poppins:wght@600;700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header fixed-top p-4 bg-body">
+      <div class="container">
+        <nav class="navbar">
+          <a class="header__logo" href="#"
+            ><img src="./icons/logo.svg" alt="logo"
+          /></a>
+          <ul
+            class="header__menu nav d-none d-md-flex col-6 justify-content-around"
+          >
+            <li class="header__item nav-item">
+              <a href="#" class="header__link nav-link">Home</a>
+            </li>
+            <li class="header__item nav-item">
+              <a href="#" class="header__link nav-link">Product</a>
+            </li>
+            <li class="header__item nav-item">
+              <a href="#" class="header__link nav-link">Faq</a>
+            </li>
+            <li class="header__item nav-item">
+              <a href="#" class="header__link nav-link">Contact</a>
+            </li>
+          </ul>
+          <button
+            class="navbar-toggler d-lg-none d-md-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul
+                class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3"
+              >
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Faq</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="promo p-13">
+        <picture>
+          <source srcset="./img/bg-promo1x.png 1x, ./img/bg-promo2x 2x" />
+          <img
+            class="img"
+            src="./img/bg-promo1x.png "
+            alt="promo"
+            style="width: 100%"
+          />
+        </picture>
+        <div class="container">
+          <h2 class="promo__sudtitle">Restaurant app</h2>
+          <h1 class="promo__titel">
+            Why stay hungry when you can order form Eats
+          </h1>
+          <h3 class="promo__subtitle">Order in exchange for hunger</h3>
+          <button class="promo__btn">Delivery</button>
+          <button class="promo__btn">Menu</button>
+        </div>
+      </section>
+      <section class="how py-5">
+        <div class="container">
+          <h2 class="how__title">How the app works</h2>
+          <div
+            class="how__box d-flex justify-content-evenly align-items-center"
+          >
+            <div class="how__img">
+              <picture>
+                <source srcset="./img/phone1x.png 1x, ./img/phone2x 2x" />
+                <img src="./img/phone1x.png" alt="phone" />
+              </picture>
+            </div>
+            <div class="how__div-text">
+              <h3 class="how__above-text">Create an account</h3>
+              <h2 class="how__titel">
+                Create/login to an existing <br />
+                account to get started
+              </h2>
+              <h3 class="how__text">
+                An account is created with your email <br />
+                and a desired password
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="information py-5">
+        <div class="container">
+          <div
+            class="information__box d-flex justify-content-evenly align-items-center"
+          >
+            <div class="information__div-text">
+              <h3 class="information__above-text">Explore varieties</h3>
+              <h2 class="information__titel">
+                Shop for your favorites <br />
+                meal as e dey hot.
+              </h2>
+              <h3 class="information__text">
+                Shop for your favorite meals or drinks <br />
+                and enjoy while doing it.
+              </h3>
+            </div>
+            <div class="information__img">
+              <picture>
+                <source
+                  srcset="./img/phone-flover1x.png 1x, ./img/phone-flover2x 2x"
+                />
+                <img src="./img/phone-flover1x.png" alt="phone" />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="order">
+        <picture>
+          <source srcset="./img/bg-order2x.png 2x, ./img/bg-order3x.png 3x" />
+          <img
+            class="img"
+            src="./img/bg-order2x.png "
+            alt="order"
+            style="width: 100%"
+          />
+        </picture>
+        <div class="container">
+          <h2 class="order__sudtitle">Order now.</h2>
+          <h1 class="order__titel">
+            Available on your favorite store. Start your premium experience now
+          </h1>
+          <button class="order__btn">Playstore</button>
+          <button class="order__btn">App store</button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer p-5">
+      <div class="container d-flex align-items-center justify-content-between">
+        <a class="header__logo" href="#"
+          ><img src="./icons/logo.svg" alt="logo"
+        /></a>
+        <a class="footer__text" href="#"> Copywright 2020 Bella Onojie.com </a>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
